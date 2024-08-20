@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Intent</string>
+    <string name="first_place_text">Тут ловить нечего</string>
+    <string name="go_next">Калькулятор</string>
+    <string name="first_operand">первый операнд</string>
+    <string name="second_operand">второй операнд</string>
+    <string name="return_to_first">Передать данные</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="composition">*</string>
+    <string name="division">/</string>
+    <string name="error_null">Один или оба операнда пусты</string>
+    <string name="error_not_digit">Вводите только числовые значения</string>
+    <string name="error_div_by_zero">Деление на ноль запрещено</string>
+    <string name="received_result">Получен результат:</string>
+</resources>

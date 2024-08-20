@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        android:id="@+id/topLineLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05">
+
+        <EditText
+            android:id="@+id/inputFirstET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size_10dp"
+            android:layout_marginRight="@dimen/margin_size_5dp"
+            android:layout_weight="1"
+            android:hint="@string/first_operand"
+            android:textSize="@dimen/input_text_size_20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTimesLL" />
+
+        <EditText
+            android:id="@+id/inputSecondET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size_5dp"
+            android:layout_marginRight="@dimen/margin_size_10dp"
+            android:layout_weight="1"
+            android:hint="@string/second_operand"
+            android:textSize="@dimen/input_text_size_20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputTime1ET" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/operationLineLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topLineLL"
+        app:layout_constraintVertical_bias="0.01">
+
+        <Button
+            android:id="@+id/summBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size_10dp"
+            android:layout_marginRight="@dimen/margin_size_5dp"
+            android:layout_weight="1"
+            android:text="@string/plus"
+            android:textSize="@dimen/main_text_size_24sp" />
+
+        <Button
+            android:id="@+id/diffBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size_5dp"
+            android:layout_marginRight="@dimen/margin_size_5dp"
+            android:layout_weight="1"
+            android:text="@string/minus"
+            android:textSize="@dimen/main_text_size_24sp" />
+
+        <Button
+            android:id="@+id/compBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size_5dp"
+            android:layout_marginRight="@dimen/margin_size_5dp"
+            android:layout_weight="1"
+            android:text="@string/composition"
+            android:textSize="@dimen/main_text_size_24sp" />
+
+        <Button
+            android:id="@+id/divBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size_5dp"
+            android:layout_marginRight="@dimen/margin_size_10dp"
+            android:layout_weight="1"
+            android:text="@string/division"
+            android:textSize="@dimen/main_text_size_24sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/returnToFirstBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_size_5dp"
+        android:layout_marginRight="@dimen/margin_size_5dp"
+        android:text="@string/return_to_first"
+        android:textSize="@dimen/main_text_size_24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operationLineLL"
+        app:layout_constraintVertical_bias="0.1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
